@@ -5,7 +5,7 @@ Future<void> dbConnector() async {
   print("Connecting to mysql server...");
 
   // MySQL 접속 설정
-  final conn = await MySQLConnection.createConnection(host: "localhost", port: 3306, userName: "root", password: "wnsgus745", databaseName: "materials");
+  final conn = await MySQLConnection.createConnection(host: "", port: , userName: "", password: "", databaseName: "");
   await conn.connect();
   print("Connected");
   await conn.close();
